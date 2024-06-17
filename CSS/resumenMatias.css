@@ -1,0 +1,53 @@
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #7b5454;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .contenedorTarjeta {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .tarjetaHeader {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .tarjetaHeader h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .tarjetaHeader img {
+      max-width: 100px;
+    }
+
+    .tarjetaInfo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .tarjetaInfo p {
+      margin: 0;
+    }
+
+    .card-info p:first-child {
+      font-weight: bold;
+    }
+
+    .tarjetaFooter{
+      text-align: right;
+    }

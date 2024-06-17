@@ -1,0 +1,409 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+
+/* contenedor del header */
+header{
+    background-color:  #0051BD;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    font-size: 0.5em;
+}
+
+
+
+ .logo{
+    width: 150px;
+    height: 150px;
+}
+
+.titulo {
+    text-decoration: none;
+    margin: 0;
+    flex: 1;
+    align-self: self-start;
+    
+}
+
+header h1{
+   color: white;
+   font-size: 9em;
+   margin: 0;
+   flex: 1;
+   align-self: self-start;
+}
+
+h1:hover{
+    cursor: pointer;
+}
+
+
+.buscador-header{
+    box-shadow: 5px 4px 15px 0 black;
+    font-size: 3.5em;
+    padding: 5px;
+    border: none;
+    margin-right: 0.5em;
+    order: 3;
+}
+
+.buscador-header:hover{
+    font-size: 3.6em;
+}
+
+
+.inicio-sesion-header{
+    font-size: 3em;
+    color: white;
+    background-color: #6abafc;
+    padding: 10px;
+    border: none;
+    order: 4;
+}
+.inicio-sesion-header:hover{
+    cursor: pointer;
+    background-color: #b0a59a;
+    font-size: 3.1em;
+    
+
+}
+
+#icono-lupa{
+    margin-left: 5px;
+    order: 5;
+}
+
+.pedi-tu-tarjeta{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    order: 1;
+    margin-right: 20%;
+    margin-left: 10%;
+}
+
+
+
+.parrafo-header {
+    font-size: 3em;
+    padding: 10px;
+    color: white;
+}
+
+.parrafo-header:hover {
+    cursor: pointer;
+    color:#d2ae68;
+    font-size: large;
+}
+
+
+.iconosheader {
+    font-size: 5em;
+    margin-left: 10px;
+    color: white;
+
+}
+.iconosheader:hover {
+    cursor: pointer;
+    color: #d2ae68;
+}
+
+/* FIN DEL HEADER */
+
+/* MENU HORIZONTAL */
+
+
+.contenedor-menu{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 2em;
+    background-color: #0051BD;
+    padding: 20px 0;
+}
+
+.enlaces-menu{
+   margin: 0 10px;
+   color: white;
+   text-decoration: none;
+}
+
+.enlaces-menu:hover{
+    cursor: pointer;
+    color: #d2ae68;
+    font-size: large;
+}
+
+.iconos-contenedor-menu{
+    color: white;
+}
+
+.iconos-contenedor-menu:hover{
+    cursor: pointer;
+    color: #3e3d3b;
+    font-size: large;
+}
+@media screen and (max-width:800px){
+.contenedor-menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2.2em;
+  background-color: #0051BD;
+  padding: 20px 0px;
+}
+}
+/* CONTENIDO PPAL */
+
+/* PRIMER SECCION*/
+.ingresoDeClientes{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    gap: 3em;
+    
+}
+
+.ingresoDeClientesizq{
+  flex-grow: 1;
+  flex-basis: 10em;
+}
+
+.ingresoCentro{
+    flex-grow: 10;
+    flex-basis: 50em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.ingresoDeClientesDer{
+    flex-grow: 10;
+    flex-basis:100em ;
+    align-self: flex-end;
+
+}
+
+@media screen and (max-width:800px){
+    .ingresoDeClientes{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        gap: 3em;
+    }
+
+   
+}
+
+
+
+
+
+/* INGRESO DE CLIENTES PARTE IZQUIERDA */
+form{
+    border: 2px solid black;
+    text-align: center;
+    box-shadow:inset 3px 2px 18px rgb(21, 105, 135);
+    padding: 2em;
+    padding-top: 0;
+    padding-bottom: 6em;
+    margin: 5em;
+}
+
+form input{
+    border: none;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    box-shadow: 1px 2px 8px 0 rgb(0, 0, 0);
+    background-color: #efefef;
+}
+
+
+form label,input:hover{
+    cursor: pointer;
+    font-size: 1.4em;
+    color: #3e3d3b;
+}
+
+form button:hover{
+    font-size: 2.1em;
+    cursor: pointer;
+}
+
+h2{
+    margin-top: 4em;
+    margin-bottom: 3em;
+    font-size: 2.3em;
+    background-color: #5ba3f8;
+    text-align: center;
+}
+
+form button{
+    margin-top: 1em;   
+    background-color:#5ba3f8 ;
+    border: none;
+    font-size: 2em;
+}
+
+.ingresar{
+    font-size: 2.4em;
+}
+
+.ingresar:hover{
+    font-size: 2.6em;
+}
+
+.registrarme{
+    font-size: 1.7em;
+
+}
+
+form label{
+    font-size: 1.5em;
+}
+
+
+
+
+ /* INGRESO DE CLIENTES CENTRO */
+
+
+h3{
+
+    font-size: 3em;
+    text-align: center;
+    margin-top: 3em;
+    
+}
+
+.ingresoCentro p {
+    width: 30em;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: #5ba3f8;
+    border-radius: 20%;
+    padding: 2em;
+    margin-bottom: 12em;
+}
+
+.ingresoCentro p:hover{
+    font-size: 1.21em;
+    cursor: pointer;
+    box-shadow: 2px 2px 16px 0 gray;
+}
+
+/* INGRESO DE CLIENTES PARTE DERECHA */
+.ingresoDeClientesDer img{
+    width: 90em;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
+
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0051BD;
+    color: white;
+    font-size: 10px;
+    padding: 20px 30px;
+    
+}
+
+.contenedor-seguinosEnRedesYIconos{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    order: -10;
+    font-size: 1.9em;
+}
+
+.contenedor-seguinoEnRedes{
+    order: -10;
+}
+.contenedor-iconos {
+    order: -5;
+    display: flex;
+    gap: 20px;
+    
+    
+} 
+
+
+.contenedorCondicionesYPoliticas{
+    display: flex;
+    gap: 5;
+    font-size: 2em;
+}
+
+
+/* SEGUINOS E ICONOS */
+.contenedor-seguinoEnRedes p{
+    font-size: 1.5em;
+}
+
+ .contenedor-iconos a{
+    font-size: 2.5em;
+    color: white;
+}
+.contenedor-iconos a :hover{
+    color: #d2ae68;
+    font-size: 2em;
+}
+
+
+
+/* TERMINOS Y CONDICIONES Y POLIICAS DE PRIVACIADAD */
+.contenedorCondicionesYPoliticas p{
+    margin: 1em;
+    font-size:1em ;
+}
+
+
+.contenedorCondicionesYPoliticas p:hover{
+    color: #d2ae68 ;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+@media screen and (max-width:800px){
+    
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #0051BD;
+        color: white;
+        font-size: 10px;
+        padding: 20px 30px;
+        
+    }
+
+
+}
+
+
+
